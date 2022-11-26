@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    </head>
+    <body>
+        <h1 id="title">Survey Form EETWO-T1</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form" action="">
+            <h2>Step 1:</h2>
+            <div class="divs">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="divs">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="divs">
+                <label id="number-label" for="number">Age</label>
+                <input id="number" type="number" min="18" max="90" placeholder="Enter your age">
+            </div>
+            <div class="divs">
+                <label for="phone" id="phone-label">Phone</label>
+                <input type="text" id="phone" placeholder="Enter your phone">
+            </div>
+            <h2>Step 2:</h2>
+            <div class="divs">
+                <label for="address" id="address-label">Address</label>
+                <input type="text" id="address" placeholder="Enter your address">
+            </div>
+            <div class="divs">
+                <label for="postcode" id="postcode-label">Post Code</label>
+                <input type="text" id="postcode" placeholder="Enter your post code">
+            </div>
+            <div class="divs">  
+                <label for="country" id="country-label">Country</label>
+                <input type="text" id="country" placeholder="Enter your country">
+            </div>
+            <div class="divs">
+                <label id="dropdown-label" for="dropdown">Sexo</label>
+                <select name="" id="dropdown">
+                    <option disabled selected>Select your sex</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+            <h2>Step 3:</h2>
+            <div id="div1"class="divs">
+                <label id="experien" for="" >Rate your experience</label><br><br>
+                <input type="radio" name="experience" value="Good">
+                <label for="Good">Good</label><br>
+                <input type="radio" name="experience" value="Bad">
+                <label for="Bad">Bad</label>
+            </div>
+            <div id="div2" class="divs">
+                <label for="" id="studies">Studies completed</label><br><br>
+                <input type="checkbox" value="initial">
+                <label for="">Initial</label><br>
+                <input type="checkbox" value="primary">
+                <label for="">Primary</label><br>
+                <input type="checkbox" value="high-school">
+                <label for="">High school</label><br>
+                <input type="checkbox" value="university">
+                <label for="">University</label>
+            </div>
+            <div id="div3" class="divs">
+                <label for="" id="improve">What would you like to see improved?</label><br><br>
+                <input type="checkbox" value="frontend">
+                <label for="">Front-end Projects</label><br>
+                <input type="checkbox" value="backend">
+                <label for="">Back-end Projects</label><br>
+                <input type="checkbox" value="data">
+                <label for="">Data-Visualization</label><br>
+                <input type="checkbox" value="courses">
+                <label for="">Additional Courses</label><br>
+                <input type="checkbox" value="challenges">
+                <label for="">Challenges</label><br>
+            </div>
+            <div class="divs">
+                <label for="comment" id="add-comment">Additional comment</label><br>
+                <textarea id="add-co" name="comment" id="comment" placeholder="Enter your comment" rows="5"></textarea>
+            </div>
+            <div class="divs">
+                <input id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </body>
+</html>
+
+
+
+
