@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ba3244;
+    box-sizing: border-box;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+#foto img{
+    width: 40px;
+    border-radius: 120px;
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 1rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1.5rem;
+}
+nav a:hover{
+    background-color: white;
+    color: red;
+}
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgb(34, 33, 33);
+    width: 100%;
+    height: calc(100vh - 59px);
+    margin-top: 59px;
+    box-sizing: border-box;
+}
+.principal{
+    width: 100%;
+    padding: 4rem 1rem 0;
+    box-sizing: border-box;
+}
+h1, p{
+    margin: 0;
+}
+.aptitudes{
+    padding: 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.titu-apt{
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+li{
+    list-style: none;
+}
+.grid-apt{
+    margin: 0;
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grid-apt a{
+    text-align: center;
+    width: 25%;
+    max-width: 100px;
+    font-size: 1rem;
+    padding: 16px;
+}
+.grid-apt a:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+} 
+/*projects*/
+#projects{
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #3a4e7d;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    grid-gap: 4rem;
+    height: auto;
+    margin: 4rem 0;
+}
+#grid a{
+    text-align: center;
+    width: inherit;
+    padding: 0;
+    background-color: #303841;
+}
+a img{
+    width: 100%;
+    height: auto;
+}
+button{
+    background-color: #303841;
+    border: 0;
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    padding: 1rem 3rem;
+}
+.links_to p{
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+    word-wrap: break-word;
+}
+/*contact*/
+#findme{
+    background-color: rgb(50, 48, 48);
+    padding-top: 14.5rem;
+    text-align: center;
+    width: 100%;
+    height: 30rem;
+}
+#contact{
+    color: white;
+}
+#social{
+    margin-top: 10rem;
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+footer{
+    background-color: #ba3244;
+    padding: 0.4rem;
+    text-align: right;
+    border-top: solid white;
+}
+footer p{
+    padding: 1rem 0;
+}
+@media (max-width: 540px){
+    #navbar a{
+        padding: 16px 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+@media(max-width:433px){
+    .grid-apt{
+        padding: 0 0.4rem;
+    }
+    #projects{
+        padding: 3rem 1rem ;
+    }
+    #grid{
+        grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+    }
+    #findme{
+        height: auto;
+        padding: 5rem 0;
+    }
+    #social{
+        padding: 0;
+    }
+}
+@media(max-width:286px){
+    #welcome-section{
+        justify-content: space-between;
+    }
+    .principal{
+        padding: 64px 0.2rem 0;
+    }
+    .aptitudes{
+        padding: 32px 0.2rem;
+    }
+    .grid-apt{
+        padding: 0;
+    }
+    #projects{
+        padding: 3rem 0.3rem ;
+    }
+    .project-title{
+        width: 100%;
+        word-wrap: break-word;
+    }
+    button{
+        width: 100%;
+        padding: 0.5rem 0.1rem;
+    }
+    #social{
+        flex-direction: column;
+    }
+}
+@media(max-width:215px){
+    #welcome-section{
+        height: 100%;
+    }
+    .grid-apt a{
+        width: 100%;
+    }
+}
